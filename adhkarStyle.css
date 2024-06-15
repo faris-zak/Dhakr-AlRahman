@@ -199,7 +199,7 @@ section div.card ul{
 section div.card li{
     font-size: 18px;
     margin: 10px;
-    line-height: 2.5;
+    padding-bottom: 20px;
 }
 
 .zkr{
