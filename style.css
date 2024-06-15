@@ -39,7 +39,7 @@ nav.navBar div.navDiv a div.img img:active{
     transform: scale(90%);
 }
 
-nav.navBar div.navDiv p.title a{
+nav.navBar div.navDiv p.title{
     user-select: none;
     color: #c58940;
     font-size: 30px;
@@ -68,71 +68,12 @@ nav.navBar div.navDiv ul li a.site:hover{
     color: #c58940;
 }
 
-nav.navBar div.navDiv div.dropdown{
-    position: relative;
-    display: inline-block;
-}
-
-nav.navBar div.navDiv div.dropdown div.dropdownContent{
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: #E5E5E5;
-    min-width: 160px;
-    border-radius: 3px;
-    z-index: 1;
-}
-
-nav.navBar div.navDiv div.dropdownContent a{
-    display: block;
-    color: #000;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-    padding: 10px 12px;
-    text-decoration: none;
-}
-
-nav.navBar div.navDiv div.dropdownContent a:hover{
-    border-radius: 4px;
-    color: #c58940;
-}
-
-nav.navBar div.navDiv div.dropdownContent a:active{
-    color: #000;
-}
-
-nav.navBar div.navDiv div.dropdownContent a:hover{
-    background-color: #f1f1f1;
-}
-
-nav.navBar div.navDiv div.dropdown:hover div.dropdownContent{
-    display: block; 
-}
-
-nav.navBar div.navDiv div.dropdown button.dropBtn:hover, nav.navBar div.navDiv div.dropdown button.dropBtn:focus{
-    color: #c58940;
-}
-
-nav.navBar div.navDiv button.dropBtn{
-    display: none;
-}
-
 footer{
     padding: 40px 0px;
     width: 100%;
     color: #868686;
     font-size: 1em;
     padding-bottom: 0;
-}
-
-footer div.contact a{
-    text-decoration: none;
-    color: #868686;
-}
-
-footer div.contact a:hover{
-    color: #c3c6ce;
 }
 
 footer div.quickLink ul{
@@ -150,70 +91,34 @@ footer div.quickLink ul li a{
 }
 
 footer div.quickLink ul li a:hover{
-    color: #000;
-}
-
-footer div.contact a i{
-    color: #868686;
-    font-size: 1.5em;
-    margin: 0% 1%;
-}
-
-footer div.contact a i:hover{
     color: #c58940;
 }
 
-@media screen and (max-width: 800px){
 
-    nav.navBar div.navDiv a div.img img{
-        width: 120px;
-    }
-    
-    nav.navBar div.navDiv p.title a{
-        font-size: 28px;
-    }
-
-    nav.navBar div.navDiv p.title a{
-        font-size: 28px;
-    }
-
-    nav.navBar div.navDiv ul li a.site{
-        display: none;
-    }
-
-    nav.navBar div.navDiv button.dropBtn{
-        display: block;
-        border: none;
-        font-size: 32px;
-        background-color: transparent;
-        color: black;
-        padding: 4px 5px;
-        cursor: pointer;
-        border-radius: 2px;
-    }
-
-    nav.navBar div.navDiv button.dropBtn:hover{
-        transform: scale(105%);
-    }
-}
-
-@media screen and (max-width:720px){
+@media screen and (max-width: 900px){
 
     nav.navBar div.navDiv a div.img img{
         width: 110px;
     }
+    
+    nav.navBar div.navDiv p.title{
+        font-size: 24px;
+    }
+}
 
-    nav.navBar div.navDiv p.title a{
-        font-size: 26px;
+@media screen and (max-width:700px){
+
+    nav.navBar div.navDiv a div.img img{
+        width: 100px;
+    }
+
+    nav.navBar div.navDiv p.title{
+        font-size: 22px;
     }
 
     footer div.quickLink ul li{
         display: block;
         margin: 10px 0px;
-    }
-
-    footer div.contact a i{
-        margin: 0% 3%;
     }
 }
 
@@ -228,16 +133,12 @@ footer div.contact a i:hover{
         width: 90px;
     }
 
-    nav.navBar div.navDiv p.title a{
+    nav.navBar div.navDiv p.title{
         display: none;
     }
 
-    nav.navBar div.navDiv button.dropBtn{
-        font-size: 25px;
-    }
-
-    nav.navBar div.navDiv div.dropdownContent a{
-        font-size: 17px;
+    nav.navBar div.navDiv ul{
+        opacity: 0;
     }
 
     footer div.quickLink ul{
@@ -246,7 +147,7 @@ footer div.contact a i:hover{
     }
 
     footer div.copyright p{
-        font-size: 1em;
+        font-size: 16px;
         position: relative;
         margin-top: 0px;
         margin-bottom: 0px;
