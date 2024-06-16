@@ -1,0 +1,22 @@
+{
+    "name":"Dhakr AlRahman | ذكر الرحمن",
+    "short_name":"Dhakr AlRahman",
+    "start_url":"index.html",
+    "display":"standalone",
+    "background_color":"#E5E5E5",
+    "theme_color":"#C58940",
+    "scope": ".",
+    "description":"إجعل لِسانك رطباً بذكر الله.",
+    "icons":[
+    {
+    "src":"Attachments/Images/dhakr-alrahman-logo.png",
+    "sizes":"192x192",
+    "type":"image/png"
+    },
+    {
+    "src":"Attachments/Images/dhakr-alrahman-logo.png",
+    "sizes":"512x512",
+    "type":"image/png"
+    }
+  ]
+}

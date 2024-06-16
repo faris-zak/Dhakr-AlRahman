@@ -7,6 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Dhakr AlRahman | ذكر الرحمن</title>
       <link rel="icon" href="Attachments/Images/dhakr-alrahman-logo.png">
+      <link rel="manifest" href="manifest.json">
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="indexStyle.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +32,7 @@
     <main>
         <section>
             <div class="welcomeCard">
-                <p class="welcomeTitle">إجعل لسانك رطباً بذكر الله.</p>
+                <p class="welcomeTitle">إجعل لِسانك رطباً بذكر الله.</p>
             </div>
 
             <div class="azkarCardSection">
@@ -64,5 +65,24 @@
 
       <script src="indexScript.js"></script>
       <script src="script.js"></script>
+      <script>
+        window.addEventListener('load', () => {
+          registerSW();
+        });
+     
+        // Register the Service Worker
+        async function registerSW() {
+          if ('serviceWorker' in navigator) {
+            try {
+              await navigator
+                    .serviceWorker
+                    .register('serviceworker.js');
+            }
+            catch (e) {
+              console.log('SW registration failed');
+            }
+          }
+        }
+     </script>
   </body>
 </html>
