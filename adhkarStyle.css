@@ -37,11 +37,12 @@ section div.sectionContainer input#searchbar:focus{
     padding: 8px;
     width: 70%;
     font-size: 16px;
+    outline: none;
 }
 
 section div.sectionContainer button.clearButton{
     align-items: center;
-    background-color: #fff;
+    background-color: white;
     border-radius: 12px;
     box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
     box-sizing: border-box;
@@ -49,8 +50,8 @@ section div.sectionContainer button.clearButton{
     cursor: pointer;
     display: inline-flex;
     flex: 1 1 auto;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 500;
     justify-content: center;
     line-height: 1;
     margin: 20px;
@@ -77,7 +78,7 @@ section div.sectionContainer button.clearButton span{
 
 section div.sectionContainer button.clearButton:hover span{
     opacity: 1;
-    margin-right: 160px;
+    margin-right: 170px;
 }
 
 section div.sectionContainer button.clearButton:focus span{
@@ -100,7 +101,6 @@ section div.sectionContainer ul#list li.sections{
 section div.sectionContainer ul#list li.sections:last-child{
     border-bottom: none;
 }
-
 
 div.card{
     text-align: center;

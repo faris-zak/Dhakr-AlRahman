@@ -47,6 +47,7 @@ nav.navBar div.navDiv p.title{
 }
 
 nav.navBar div.navDiv ul{
+    opacity: 1;
     margin-left: auto;
     padding-right: 0;
 }
@@ -59,13 +60,19 @@ nav.navBar div.navDiv ul li{
 
 nav.navBar div.navDiv ul li a.site{
     color: #000;
-    font-size: 1.3em;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 400;
     margin: 0 20px;
 }
 
 nav.navBar div.navDiv ul li a.site:hover{
-    color: #c58940;
+    font-size: 23px;
+    text-decoration: underline;
+    text-decoration-color: #c58940;
+}
+
+nav.navBar div.navDiv ul br{
+    display: none;
 }
 
 footer{
@@ -137,8 +144,13 @@ footer div.quickLink ul li a:hover{
         display: none;
     }
 
-    nav.navBar div.navDiv ul{
-        opacity: 0;
+    nav.navBar div.navDiv ul br{
+        display: block;
+    }
+
+    nav.navBar div.navDiv ul li{
+        float: right;
+        line-height: 1.6;
     }
 
     footer div.quickLink ul{

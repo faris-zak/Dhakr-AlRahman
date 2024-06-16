@@ -2,7 +2,6 @@ section{
   text-align: center;
   margin: auto;
   justify-content: center;
-  margin-bottom: 1px;
 }
 
 section div.welcomeCard{
@@ -61,29 +60,31 @@ section div.azkarCardSection div.azkarCardDetails{
   place-content: center;
 }
 
-section div.azkarCardSection div.azkarCardDetails p.azkarCardTitle a{
+section div.azkarCardSection div.azkarCardDetails a{
   font-size: 24px;
   font-weight: 600;
   color: black;
 }
 
-section div.azkarCardSection div.azkarCardDetails p.azkarCardTitle a:hover{
+section div.azkarCardSection div.azkarCardDetails a:hover{
   color: #c58940;
+  padding-left: 12px;
 }
 
-section div.azkarCardSection div.azkarCardDetails p.azkarCardTitle span{
+section div.azkarCardSection div.azkarCardDetails a span{
+  user-select: none;
   position: absolute;
   opacity: 0;
   font-size: 20px;
   transform: translateX(30px);
 }
 
-section div.azkarCardSection div.azkarCardDetails p.azkarCardTitle a:hover + span{
+section div.azkarCardSection div.azkarCardDetails a:hover span{
   opacity: 1;
   color: #c58940;
   transform: translateX(-12px);
 }
-section div.azkarCardSection div.azkarCardDetails p.azkarCardTitle a:active + span{
+section div.azkarCardSection div.azkarCardDetails a:active span{
   opacity: 0;
   transform: translateX(-30px);
 }
@@ -94,11 +95,11 @@ section div.azkarCardSection:hover{
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.22);
 }
 
-section div.azkarCardSection:hover div.azkarCardDetails p.azkarCardTitle a{
+section div.azkarCardSection:hover div.azkarCardDetails a{
   color: #14213D;
 }
 
-section div.azkarCardSection div.azkarCardDetails p.azkarCardTitle a:hover{
+section div.azkarCardSection div.azkarCardDetails a:hover{
   color: #c58940;
 }
 
@@ -142,17 +143,6 @@ div.palestineicon p.palestinetext{
 
   section div.welcomeCard p.welcomeBody{
       font-size: 1.1em;
-  }
-
-  section div.azkarCardSection{
-      padding-top: 0;
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-bottom: 5px;
-  }
-
-  section div.azkarCardSection div.azkarCardDetails p.azkarCardTitle{
-      margin-bottom: 0;
   }
 
   div.palestineicon img.palestineflag{
