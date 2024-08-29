@@ -1,0 +1,167 @@
+*{
+    text-decoration: none;
+    font-family: 'Rubik';
+    transition: all 0.2s ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    text-align: center;
+    background-color: #E5E5E5;
+}
+
+nav.navBar{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+nav.navBar div.navDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+nav.navBar div.navDiv a div.img img{
+    user-select: none;
+    width: 140px;
+    padding-top: 5px;
+}
+
+nav.navBar div.navDiv a div.img img:hover{
+    transform: scale(110%);
+}
+
+nav.navBar div.navDiv a div.img img:active{
+    transform: scale(90%);
+}
+
+nav.navBar div.navDiv p.title{
+    user-select: none;
+    color: #c58940;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+nav.navBar div.navDiv ul{
+    opacity: 1;
+    margin-left: auto;
+    padding-right: 0;
+}
+
+nav.navBar div.navDiv ul li{
+    list-style: none;
+    display: inline-block;
+    direction: rtl;
+}
+
+nav.navBar div.navDiv ul li a.site{
+    color: #000;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 20px;
+}
+
+nav.navBar div.navDiv ul li a.site:hover{
+    font-size: 23px;
+    text-decoration: underline;
+    text-decoration-color: #c58940;
+}
+
+nav.navBar div.navDiv ul br{
+    display: none;
+}
+
+footer{
+    padding: 40px 0px;
+    width: 100%;
+    color: #868686;
+    font-size: 1em;
+    padding-bottom: 0;
+}
+
+footer div.quickLink ul{
+    width: auto;
+    padding: 0;
+}
+
+footer div.quickLink ul li{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+footer div.quickLink ul li a{
+    color: #868686;
+}
+
+footer div.quickLink ul li a:hover{
+    color: #c58940;
+}
+
+
+@media screen and (max-width: 900px){
+
+    nav.navBar div.navDiv a div.img img{
+        width: 110px;
+    }
+    
+    nav.navBar div.navDiv p.title{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:700px){
+
+    nav.navBar div.navDiv a div.img img{
+        width: 100px;
+    }
+
+    nav.navBar div.navDiv p.title{
+        font-size: 22px;
+    }
+
+    footer div.quickLink ul li{
+        display: block;
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 600px){ 
+
+    nav.navBar{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    nav.navBar div.navDiv a div.img img{
+        width: 90px;
+    }
+
+    nav.navBar div.navDiv p.title{
+        display: none;
+    }
+
+    nav.navBar div.navDiv ul br{
+        display: block;
+    }
+
+    nav.navBar div.navDiv ul li{
+        float: right;
+        line-height: 1.6;
+    }
+
+    footer div.quickLink ul{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    footer div.copyright p{
+        font-size: 16px;
+        position: relative;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
