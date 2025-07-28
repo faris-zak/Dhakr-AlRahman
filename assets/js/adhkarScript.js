@@ -18,32 +18,6 @@ function clearField(){
 }
 
 
-const searchbar = document.getElementById('searchbar');
-const clearButton = document.getElementById('clearButton');
-
-function updateButtonVisibility() {
-  if (searchbar.value === ''){
-    clearButton.style.opacity = 0;
-    clearButton.style.marginBottom = '0px';
-    searchbar.style.marginBottom = '0px';
-  }
-  else{
-    clearButton.style.opacity = 1;
-    clearButton.style.marginBottom = '50px';
-    searchbar.style.marginBottom = '10px';
-  }
-}
-
-updateButtonVisibility();
-
-searchbar.addEventListener('input', updateButtonVisibility);
-
-clearButton.addEventListener('click', function(){
-  location.reload();
-});
-
-
-
 document.addEventListener('click', function(event){
   const isClickInside = searchbar.contains(event.target); 
   if (!isClickInside) {
@@ -62,8 +36,10 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     myButton.style.opacity = '1';
+    myButton.style.cursor = 'pointer';
   } else {
     myButton.style.opacity = '0';
+    myButton.style.cursor = 'default';
   }
 }
 

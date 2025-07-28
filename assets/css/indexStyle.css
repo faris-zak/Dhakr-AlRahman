@@ -16,7 +16,6 @@ section div.welcomeCard{
 
 section div.welcomeCard p.welcomeTitle{
   font-size: 26px;
-  color: #878787;
   font-weight: 400;
   margin-top: 0px;
 }
@@ -77,6 +76,11 @@ section div.azkarCardSection div.azkarCardDetails a span{
   opacity: 0;
   font-size: 20px;
   transform: translateX(30px);
+}
+
+section div.azkarCardSection div.azkarCardDetails p{
+    color: #878787;
+    cursor: default;
 }
 
 section div.azkarCardSection div.azkarCardDetails a:hover span{
