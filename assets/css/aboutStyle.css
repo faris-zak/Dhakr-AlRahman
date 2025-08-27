@@ -56,7 +56,7 @@ section div.aboutSiteCard div.aboutSiteDetails p.aboutSiteTextBody a:hover{
     text-decoration: underline;
 }
 
-@keyframes card1{
+@keyframes infoCardAnim{
     0%{box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.20);}
     50%{box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.10);}
     100%{box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.20);}
