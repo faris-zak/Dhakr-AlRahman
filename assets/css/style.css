@@ -69,14 +69,13 @@ nav.navBar div.navDiv ul li a.site{
     -webkit-backdrop-filter: blur(5px);
     border: 2px solid #d4d4d499;
     background: #d4d4d44f;
-
 }
 
 nav.navBar div.navDiv ul li a.site:hover{
-        box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.1),
-        inset 0 0 30px #be8b0030,
-        0 0 30px #be8b0030;
+    box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 0 30px #be8b0030,
+    0 0 30px #be8b0030;
 }
 
 nav.navBar div.navDiv ul br{
@@ -122,13 +121,17 @@ footer div.quickLink ul li a:hover{
 }
 
 @media screen and (max-width:700px){
-
     nav.navBar div.navDiv a div.img img{
         width: 100px;
     }
 
     nav.navBar div.navDiv p.title{
         font-size: 22px;
+    }
+
+    nav.navBar div.navDiv ul li a.site{
+        font-size: 18px;
+        margin: 0 10px;
     }
 
     footer div.quickLink ul li{
@@ -154,6 +157,9 @@ footer div.quickLink ul li a:hover{
 
     nav.navBar div.navDiv ul br{
         display: block;
+    }
+    nav.navBar div.navDiv ul{
+        margin: 20px 0px;
     }
 
     nav.navBar div.navDiv ul li{
