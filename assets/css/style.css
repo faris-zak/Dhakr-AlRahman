@@ -63,12 +63,20 @@ nav.navBar div.navDiv ul li a.site{
     font-size: 22px;
     font-weight: 400;
     margin: 0 20px;
+    padding: 8px 16px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid #d4d4d499;
+    background: #d4d4d44f;
+
 }
 
 nav.navBar div.navDiv ul li a.site:hover{
-    font-size: 23px;
-    text-decoration: underline;
-    text-decoration-color: #c58940;
+        box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 0 30px #be8b0030,
+        0 0 30px #be8b0030;
 }
 
 nav.navBar div.navDiv ul br{

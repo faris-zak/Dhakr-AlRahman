@@ -1,7 +1,7 @@
 *{
     text-decoration: none;
     font-family: 'Rubik';
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
 }
 
 html{
@@ -19,27 +19,37 @@ section div.sectionContainer{
     align-items: center;
     margin: 0px;
 }
- 
+
 section div.sectionContainer input#searchbar{
+    z-index: 1000;
+    position: sticky;
+    top: 1rem;
     padding: 8px;
     font-size: 16px;
     border-radius: 5px;
     width: 50%;
     margin-bottom: 50px;
     box-sizing: border-box;
-    border: none;
-    background-color: #f5f5f5;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid #e5e5e520;
+    background: #E5E5E54c;
 }
 
 section div.sectionContainer input#searchbar:hover{
-        background-color: #fcfcfc;
+        box-shadow: 
+        inset 0 0 30px #8c63307d,
+        0 0 30px #8c63307d;
 }
 
 section div.sectionContainer input#searchbar:focus{
+        box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 0 30px #8c6330c0,
+        0 0 30px #8c6330c0;
     border: 3px solid #C58940;
-    background-color: white;
     padding: 8px;
-    width: 55%;
+    width: 51%;
     font-size: 16px;
     outline: none;
 }
@@ -71,6 +81,8 @@ div.card{
     margin-bottom: 70px;
     padding: 20px;
     background: #E5BA73;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.10);
 }
 
@@ -131,21 +143,43 @@ a.toTop{
     text-align: center;
     text-decoration: none;
     position: fixed;
-    color: black;
-    padding-top: 1%;
+    color: #e5e5e565;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.37),
+        inset 0 0 30px #be8b0030,
+        0 0 30px #be8b0030;
+    border: 2px solid #e5e5e520;
+    border-radius: 20px;
+    padding: 0 10px;
+    width: 50px;
+    padding-top: 6px;
     font-size: 2em;
-    right: 1rem;
     bottom: 1rem;
-    width: 3rem;
-    height: 3rem;
-    transition: opacity 0.3s;
+    right: 50%;
+    transform: translateX(50%);
+    transition: opacity 0.8s all;
     background: transparent;
     opacity: 0;
 }
 
 a.toTop:hover{
-    color: #C58940;
+    color: #ffb760c0;
+    border: 2px solid #ffb760c0;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 0 30px #8c6330c0,
+        0 0 30px #8c6330c0;
 }
+
+    a.toTop:active{
+        color: #de9c4a;
+        box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.37),
+        inset 0 0 30px #7a522bc0,
+        0 0 30px #7a522bc0;
+    }
 
 
 @keyframes fadeIn{
@@ -200,13 +234,5 @@ a.toTop:hover{
         padding: 8px;
         border: none;
         border-bottom: 1px solid #ddd;
-    }
-
-    a.toTop:hover{
-        color: black;
-    }
-
-    a.toTop:active{
-        color: #C58940;
     }
 }
